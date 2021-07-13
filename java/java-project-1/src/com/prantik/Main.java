@@ -5,30 +5,30 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        Animal animal = new Animal();
+        Animal pig = new Pig();
+        Animal dog = new Dog();
 
-        System.out.print("Enter username: ");
-        String username = scanner.nextLine();
-        int userId = random.nextInt(1000000);
-        System.out.println("Username is: " + username + ", User Id: " + userId);
+        animal.animalSound();
+        pig.animalSound();
+        dog.animalSound();
     }
 }
 
-class Vehicle {
-    protected String brand = "Ford";
-    public void honk() {
-        System.out.println("Tuut, tuut!");
+class Animal {
+    public void animalSound() {
+        System.out.println("The animal make a sound");
     }
 }
 
-class Car extends Vehicle {
-    private String modelName = "Mustang";
-    public static void main(String[] args) {
-        Car car = new Car();
+class Pig extends Animal {
+    public void animalSound() {
+        System.out.println("The pig says: wee wee");
+    }
+}
 
-        car.honk();
-
-        System.out.println(car.brand + " " + car.modelName);
+class Dog extends Animal {
+    public void animalSound() {
+        System.out.println("This dog says: bow bow");
     }
 }
