@@ -1,1 +1,3 @@
-# my-learning
+# MY LEARNING
+
+I'm learning new
