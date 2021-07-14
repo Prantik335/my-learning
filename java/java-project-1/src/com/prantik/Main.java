@@ -1,23 +1,20 @@
 package com.prantik;
 
-import java.time.*;
-import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
 
     public static void main(String[] args) {
-        LocalDate obj = LocalDate.now();
-        System.out.println(obj);
-
-        LocalTime localTime = LocalTime.now();
-        System.out.println(localTime);
-
-        LocalDateTime dateTime = LocalDateTime.now();
-        System.out.println(dateTime);
-
-        System.out.println("Before formatting: " + dateTime);
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("E dd-MMM-yyyy HH:mm:ss");
-        System.out.println("After formatting: " + formatter.format(dateTime));
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+        numbers.add(30);
+        Collections.sort(numbers);
+        for(int num: numbers) {
+            System.out.println(num);
+        }
     }
 }
 
