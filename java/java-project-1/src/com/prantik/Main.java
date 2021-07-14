@@ -5,30 +5,18 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        Animal pig = new Pig();
-        Animal dog = new Dog();
-
-        animal.animalSound();
-        pig.animalSound();
-        dog.animalSound();
+        OuterClass outer = new OuterClass();
+        OuterClass.InnerClass inner = outer.new InnerClass();
+        inner.innerMethod();
     }
 }
 
-class Animal {
-    public void animalSound() {
-        System.out.println("The animal make a sound");
-    }
-}
+class OuterClass {
+    int x = 10;
 
-class Pig extends Animal {
-    public void animalSound() {
-        System.out.println("The pig says: wee wee");
-    }
-}
-
-class Dog extends Animal {
-    public void animalSound() {
-        System.out.println("This dog says: bow bow");
+    class InnerClass {
+        void innerMethod() {
+            System.out.println(x);
+        }
     }
 }
