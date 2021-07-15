@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a1bb0e-6923-481e-8749-ad779c1dab21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1006.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1004.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1005.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1006.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1007.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1008.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1007.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1008.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1009.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1010.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,46 +46,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.URI1006">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.Main" />
-      <module name="java-problem-solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prantik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="URI1004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1004" />
-      <module name="java-problem-solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prantik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="URI1005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1005" />
-      <module name="java-problem-solving" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.prantik.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.URI1010">
     <configuration name="URI1006" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.prantik.URI1006" />
       <module name="java-problem-solving" />
@@ -91,12 +60,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="URI1007" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1007" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URI1008" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1008" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URI1009" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1009" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URI1010" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1010" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.URI1010" />
+        <item itemvalue="Application.URI1009" />
+        <item itemvalue="Application.URI1008" />
+        <item itemvalue="Application.URI1007" />
         <item itemvalue="Application.URI1006" />
-        <item itemvalue="Application.URI1005" />
-        <item itemvalue="Application.URI1004" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -109,6 +131,18 @@
       <option name="presentableId" value="Default" />
       <updated>1626184319442</updated>
     </task>
+    <task id="LOCAL-00001" summary="URI Online Judge | 1006 | Average 2 | Java 8">
+      <created>1626339128089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626339128089</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="URI Online Judge | 1006 | Average 2 | Java 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="URI Online Judge | 1006 | Average 2 | Java 8" />
   </component>
 </project>
