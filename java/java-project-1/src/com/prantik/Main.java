@@ -1,25 +1,30 @@
 package com.prantik;
 
 
-public class Main implements Runnable {
+interface StringFunction {
+    String run(String str);
+}
 
-    public static int amount = 0;
+public class Main {
 
     public static void main(String[] args) {
-        Thread thread = new Thread(new Main());
-        thread.start();
-
-        while(thread.isAlive()) {
-            System.out.println("Waiting....");
-        }
-
-        System.out.println("Main: " + amount);
-        amount++;
-        System.out.println("Main: " + amount);
+        StringFunction tag = new StringFunction() {
+            @Override
+            public String run(String s) {
+                return "#" + s;
+            }
+        };
+        StringFunction tagLambda = s -> "#" + s;
+        StringFunction exclaim = (s) -> s + "!";
+        StringFunction ask = (s) -> s + "?";
+        printFormatted("Hello", exclaim);
+        printFormatted("Hello", ask);
+        printFormatted("Hello", tag);
+        printFormatted("Hello", tagLambda);
     }
 
-    public void run() {
-//        System.out.println("This code is running in a Thread");
-        amount++;
+    public static void printFormatted(String str, StringFunction format) {
+        String result = format.run(str);
+        System.out.println(result);
     }
 }
