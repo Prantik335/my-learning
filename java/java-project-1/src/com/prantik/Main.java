@@ -1,14 +1,25 @@
 package com.prantik;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
-public class Main {
+public class Main implements Runnable {
+
+    public static int amount = 0;
 
     public static void main(String[] args) {
-       Pattern pattern = Pattern.compile("w3schools", Pattern.CASE_INSENSITIVE);
-       Matcher matcher = pattern.matcher("Visit W3Schools!");
-       boolean matchFound = matcher.find();
-       System.out.println(matchFound);
+        Thread thread = new Thread(new Main());
+        thread.start();
+
+        while(thread.isAlive()) {
+            System.out.println("Waiting....");
+        }
+
+        System.out.println("Main: " + amount);
+        amount++;
+        System.out.println("Main: " + amount);
+    }
+
+    public void run() {
+//        System.out.println("This code is running in a Thread");
+        amount++;
     }
 }
