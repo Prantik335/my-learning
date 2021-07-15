@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a1bb0e-6923-481e-8749-ad779c1dab21" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/java-problem-solving.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/prantik/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1004.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1005.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +34,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.URI1005">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.prantik.Main" />
       <module name="java-problem-solving" />
@@ -54,8 +53,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="URI1004" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1004" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="URI1005" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1005" />
+      <module name="java-problem-solving" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.URI1005" />
+        <item itemvalue="Application.URI1004" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
