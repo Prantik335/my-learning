@@ -16,6 +16,8 @@ public class TicTacToe {
         static final int B = 1;
     }
 
+    char[] symbols = {'*', 'P', 'N'};
+
     int player = Player.A;
     String[] players = {"Prantik", "Nahin"};
 
@@ -29,8 +31,15 @@ public class TicTacToe {
         gameRunning = true;
         while (gameRunning) {
             printTTT();
-            printPlayMsg();
+            int command = input("");
+            updateTTT(command);
+            changePlayer();
         }
+    }
+
+    private void updateTTT(int command) {
+        int _command = command - 1;
+        ttt[_command / 3][_command % 3] = player + 1;
     }
 
     private void changePlayer() {
@@ -41,20 +50,35 @@ public class TicTacToe {
         }
     }
 
-    private void printPlayMsg() {
-        System.out.printf("Hey %s, your turn: ", players[player]);
+    private int input(String error_msg) {
         Scanner scanner = new Scanner(System.in);
-        scanner.nextLine();
-        // TODO - validation
+        int input;
+        if (error_msg.isEmpty()) {
+            System.out.printf("Hey %s, your turn: ", players[player]);
+        } else {
+            System.out.printf("Hey %s, %s", players[player], error_msg);
+        }
+        try {
+            input = scanner.nextInt();
+            int _input = input - 1;
 
-        changePlayer();
+            if (ttt[_input / 3][_input % 3] != 0) {
+                return input("This " + input + " is already covered. Turn again: ");
+            } else if (input > 0 && input < 10) {
+                return input;
+            } else {
+                return input("Invalid turn! Turn (1 - 9): ");
+            }
+        } catch (Exception e) {
+            return input("Error! Turn again: ");
+        }
     }
 
     private void printTTT() {
         System.out.println();
         for (int r = 0; r < 3; r++) {
             for (int c = 0; c < 3; c++) {
-                System.out.printf(" %d ", ttt[r][c]);
+                System.out.printf(" %c ", symbols[ttt[r][c]]);
             }
             System.out.println("");
         }
