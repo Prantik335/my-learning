@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a1bb0e-6923-481e-8749-ad779c1dab21" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1012.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1013.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1014.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1015.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1016.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/java-problem-solving/com/prantik/URI1017.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1012.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1013.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1014.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1015.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1016.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1017.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1018.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/prantik/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/prantik/TicTacToe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +50,9 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.TicTacToe">
-    <configuration name="AgeCalculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.AgeCalculator" />
+  <component name="RunManager" selected="Application.URI1018">
+    <configuration name="URI1014" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1014" />
       <module name="java-problem-solving" />
       <extension name="coverage">
         <pattern>
@@ -52,8 +64,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.TicTacToe" />
+    <configuration name="URI1015" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1015" />
       <module name="java-problem-solving" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="URI1009" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1009" />
+    <configuration name="URI1016" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1016" />
       <module name="java-problem-solving" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +90,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="URI1010" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1010" />
+    <configuration name="URI1017" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1017" />
       <module name="java-problem-solving" />
       <extension name="coverage">
         <pattern>
@@ -91,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="URI1011" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1011" />
+    <configuration name="URI1018" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1018" />
       <module name="java-problem-solving" />
       <extension name="coverage">
         <pattern>
@@ -106,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TicTacToe" />
-        <item itemvalue="Application.AgeCalculator" />
-        <item itemvalue="Application.URI1011" />
-        <item itemvalue="Application.URI1010" />
-        <item itemvalue="Application.URI1009" />
+        <item itemvalue="Application.URI1018" />
+        <item itemvalue="Application.URI1017" />
+        <item itemvalue="Application.URI1016" />
+        <item itemvalue="Application.URI1015" />
+        <item itemvalue="Application.URI1014" />
       </list>
     </recent_temporary>
   </component>
