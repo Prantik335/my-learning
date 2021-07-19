@@ -6,40 +6,31 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView myText;
-    Button magicButton;
+    EditText name;
+    Button ok;
+    TextView result;
+    String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        myText = findViewById(R.id.myText);
+        name = findViewById(R.id.editTextName);
+        ok = findViewById(R.id.buttonOk);
+        result = findViewById(R.id.textViewResult);
 
-        myText.setTextColor(Color.BLACK);
-        myText.setText("My name is Prnatik");
-        myText.setOnClickListener(new View.OnClickListener() {
+        ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                myText.setTextColor(Color.WHITE);
-                myText.setBackgroundColor(Color.BLACK);
+                userName = name.getText().toString();
+                result.setText(userName);
             }
         });
-
-        magicButton = findViewById(R.id.domagic);
-
-        magicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                magicButton.setBackgroundColor(Color.BLACK);
-                myText.setText("I am a programmer.");
-                myText.setVisibility(View.INVISIBLE);
-            }
-        });
-
     }
 }

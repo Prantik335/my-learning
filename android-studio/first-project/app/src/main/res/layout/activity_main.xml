@@ -1,49 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clickable="true"
+    android:background="@android:color/holo_blue_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/myText"
-        android:layout_width="150dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="160dp"
-        android:background="#2196F3"
-        android:gravity="center"
-        android:text="Hello world to the human"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/domagic"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="296dp"
-        android:background="@drawable/button_shape"
-        android:text="Do your magic"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:backgroundTint="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="40dp"
-        android:text="Button 2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Please write your name"
+        android:inputType="textPersonName" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="ok"
+        android:textColor="#000000"
+        app:backgroundTint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:height="30dp"
+        android:background="#FFFFFF"
+        android:text="Result" />
+
+
+</LinearLayout>
