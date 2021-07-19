@@ -2,6 +2,7 @@ package me.prantik.firstproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
+
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
     Button ok;
     TextView result;
     ImageView image;
-    Spinner spinner;
-    ArrayAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,33 +38,17 @@ public class MainActivity extends AppCompatActivity {
         ok = findViewById(R.id.buttonOk);
         result = findViewById(R.id.textViewResult);
         image = findViewById(R.id.imageView);
-        spinner = findViewById(R.id.spinnerCountry);
-
-        adapter = ArrayAdapter.createFromResource(this, R.array.countries,
-                android.R.layout.simple_spinner_item
-        );
-
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        spinner.setAdapter(adapter);
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String countryName = adapterView.getItemAtPosition(i).toString();
-                result.setText(countryName);
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Snackbar.make(layout, "This is a snackbar message", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Close", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
 
+                            }
+                        }).show();
             }
         });
     }
