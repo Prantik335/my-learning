@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71a1bb0e-6923-481e-8749-ad779c1dab21" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../android-studio/unit-converter/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../android-studio/unit-converter/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/prantik/URI1043.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
       <recent name="sdg" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.URI1042">
+  <component name="RunManager" selected="Application.URI1043">
     <configuration name="URI1038" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.prantik.URI1038" />
       <module name="java-problem-solving" />
@@ -98,34 +98,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="URI1043" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.prantik.URI1043" />
       <module name="java-problem-solving" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/com/prantik" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/com/prantik/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.prantik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.URI1043" />
         <item itemvalue="Application.URI1042" />
         <item itemvalue="Application.URI1041" />
         <item itemvalue="Application.URI1038" />
         <item itemvalue="Application.URI1040" />
-        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
