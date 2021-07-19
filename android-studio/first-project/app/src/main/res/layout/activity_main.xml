@@ -14,7 +14,7 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         android:src="@drawable/mountain" />
 
     <TextView
@@ -24,17 +24,21 @@
         android:layout_marginTop="30dp"
         android:height="30dp"
         android:background="#FFFFFF"
+        android:text="My name is Prantik"
         android:textAllCaps="false"
         android:textColor="#000000"
-        android:textSize="18sp" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttonOk"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="ok"
+        android:text="Delete Text of TextView"
         android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:backgroundTint="#FFFFFF" />
 
 
