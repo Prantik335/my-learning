@@ -9,15 +9,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextName"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:hint="Please write your name"
-        android:inputType="textPersonName" />
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prantik" />
 
     <Button
         android:id="@+id/buttonOk"
@@ -35,7 +32,25 @@
         android:layout_marginTop="30dp"
         android:height="30dp"
         android:background="#FFFFFF"
-        android:text="Result" />
+        android:text="What is your gender?"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Male" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:text="Female" />
 
 
 </LinearLayout>
