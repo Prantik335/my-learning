@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_blue_dark"
@@ -25,6 +26,34 @@
         android:textColor="#000000"
         app:backgroundTint="#FFFFFF" />
 
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Green"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioButtonYellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
     <TextView
         android:id="@+id/textViewResult"
         android:layout_width="300dp"
@@ -36,21 +65,6 @@
         android:textAllCaps="true"
         android:textColor="#000000"
         android:textSize="18sp" />
-
-    <CheckBox
-        android:id="@+id/checkBoxMale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Male" />
-
-    <CheckBox
-        android:id="@+id/checkBoxFemale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:checked="false"
-        android:text="Female" />
 
 
 </LinearLayout>

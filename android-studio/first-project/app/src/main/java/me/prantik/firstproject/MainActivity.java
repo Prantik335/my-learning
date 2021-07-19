@@ -9,48 +9,47 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    LinearLayout layout;
     Button ok;
     TextView result;
     ImageView image;
-    CheckBox male;
-    CheckBox female;
+    RadioGroup radioGroup;
+    RadioButton green;
+    RadioButton red;
+    RadioButton yellow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        layout = findViewById(R.id.linear);
         ok = findViewById(R.id.buttonOk);
         result = findViewById(R.id.textViewResult);
         image = findViewById(R.id.imageView);
-        male = findViewById(R.id.checkBoxMale);
-        female = findViewById(R.id.checkBoxFemale);
 
-        male.setOnClickListener(view -> {
-            if (male.isChecked()) {
-                result.setText("Male");
-                female.setChecked(false);
-            } else {
-                result.setText("What is your gender?");
-            }
-        });
-        female.setOnClickListener(view -> {
-            if (female.isChecked()) {
-                result.setText("Female");
-                male.setChecked(false);
-            } else {
-                result.setText("What is your gender?");
-            }
-        });
+        radioGroup = findViewById(R.id.group);
+        green = findViewById(R.id.radioButtonGreen);
+        red = findViewById(R.id.radioButtonRed);
+        yellow = findViewById(R.id.radioButtonYellow);
 
         ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                image.setImageResource(R.drawable.mountain);
+                if(green.isChecked()) {
+                    layout.setBackgroundColor(Color.GREEN);
+                } else if(red.isChecked()) {
+                    layout.setBackgroundColor(Color.RED);
+                } else if(yellow.isChecked()) {
+                    layout.setBackgroundColor(Color.YELLOW);
+                }
             }
         });
     }
