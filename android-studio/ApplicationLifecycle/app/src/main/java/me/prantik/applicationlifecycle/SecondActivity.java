@@ -1,45 +1,31 @@
 package me.prantik.applicationlifecycle;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.time.LocalTime;
 
-public class MainActivity extends AppCompatActivity {
-
+public class SecondActivity extends AppCompatActivity {
     private static final String TAG = "AppLifecycle";
-    String prefix = "First Activity ";
-    TextView textView;
-    Button plus1;
-    Button button2;
-    int counter = 0;
+    String prefix = "Second Activity ";
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
 
-        textView = findViewById(R.id.textView);
-        plus1 = findViewById(R.id.button);
-        button2 = findViewById(R.id.button2);
+        button = findViewById(R.id.button3);
 
-        plus1.setOnClickListener(view -> {
-            textView.setText(++counter + "");
-        });
-
-        button2.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            startActivity(intent);
+        button.setOnClickListener(view -> {
+            Intent i = new Intent(SecondActivity.this, MainActivity.class);
+            startActivity(i);
         });
 
         Log.d(TAG, prefix + "onCreate [ " + now()+ " ]");
