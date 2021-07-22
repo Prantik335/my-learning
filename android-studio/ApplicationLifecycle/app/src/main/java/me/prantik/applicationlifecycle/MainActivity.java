@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
 
         Log.d(TAG, prefix + "onDestroy [ " + now()+ " ]");
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        startActivity(intent);
     }
 
     @Override
