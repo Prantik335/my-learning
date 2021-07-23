@@ -1,5 +1,6 @@
 package me.prantik.services;
 
+import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
@@ -7,14 +8,11 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-public class MyService extends Service  {
+public class MyService extends IntentService {
     private static final String TAG = "MyService";
 
-    @Nullable
-    @Override
-    public IBinder onBind(Intent intent) {
-        Log.d(TAG, "onBind");
-        return null;
+    public MyService() {
+        super("name");
     }
 
     @Override
@@ -35,5 +33,10 @@ public class MyService extends Service  {
         super.onDestroy();
 
         Log.d(TAG, "MyService is destroyed");
+    }
+
+    @Override
+    protected void onHandleIntent(@Nullable Intent intent) {
+        Log.d(TAG, "onHandleIntent");
     }
 }
