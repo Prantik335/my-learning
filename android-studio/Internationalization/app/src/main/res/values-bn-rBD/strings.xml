@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">আন্তর্জাতিকরণ</string>
+    <string name="hello">হেই পৃথিবী</string>
+    <string name="show_toast">টোস্ট বার্তা দেখাও</string>
+    <string name="toast">এটা একটা টোস্ট বার্তা</string>
+    <string name="bangla">ব</string>
+</resources>
